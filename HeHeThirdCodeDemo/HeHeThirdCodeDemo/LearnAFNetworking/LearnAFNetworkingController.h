@@ -6,8 +6,8 @@
 //  Copyright © 2018年 ycb. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SecondViewController.h"
 
-@interface LearnAFNetworkingController : UIViewController
+@interface LearnAFNetworkingController : SecondViewController
 
 @end

@@ -25,6 +25,9 @@
 		5CD22FBD201EEA61002B227B /* LearnListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD22FBC201EEA61002B227B /* LearnListCell.m */; };
 		5CD22FC0201EEA93002B227B /* LearnListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD22FBF201EEA93002B227B /* LearnListModel.m */; };
 		5CD22FC4201EEE27002B227B /* LearnAFNetworkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD22FC3201EEE27002B227B /* LearnAFNetworkingController.m */; };
+		5CD22FC7201EF1F7002B227B /* BackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD22FC6201EF1F7002B227B /* BackButton.m */; };
+		5CD22FCE201EF2AC002B227B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD22FCD201EF2AC002B227B /* SecondViewController.m */; };
+		5CD22FD1201EF2C5002B227B /* UIViewController+NavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD22FD0201EF2C5002B227B /* UIViewController+NavBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,12 @@
 		5CD22FBF201EEA93002B227B /* LearnListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnListModel.m; sourceTree = "<group>"; };
 		5CD22FC2201EEE27002B227B /* LearnAFNetworkingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnAFNetworkingController.h; sourceTree = "<group>"; };
 		5CD22FC3201EEE27002B227B /* LearnAFNetworkingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnAFNetworkingController.m; sourceTree = "<group>"; };
+		5CD22FC5201EF1F7002B227B /* BackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackButton.h; sourceTree = "<group>"; };
+		5CD22FC6201EF1F7002B227B /* BackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackButton.m; sourceTree = "<group>"; };
+		5CD22FCC201EF2AC002B227B /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		5CD22FCD201EF2AC002B227B /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5CD22FCF201EF2C5002B227B /* UIViewController+NavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavBar.h"; sourceTree = "<group>"; };
+		5CD22FD0201EF2C5002B227B /* UIViewController+NavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavBar.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +142,7 @@
 		5CD22E8B201EC33E002B227B /* HeHeThirdCodeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5CD22FC8201EF27C002B227B /* Base */,
 				5CD22FC1201EEE1A002B227B /* LearnAFNetworking */,
 				5CD22FB7201EEA18002B227B /* LearnBase */,
 				5CD22E8F201EC33E002B227B /* AppDelegate.h */,
@@ -211,6 +221,8 @@
 				5CD22FBC201EEA61002B227B /* LearnListCell.m */,
 				5CD22FBE201EEA93002B227B /* LearnListModel.h */,
 				5CD22FBF201EEA93002B227B /* LearnListModel.m */,
+				5CD22FC5201EF1F7002B227B /* BackButton.h */,
+				5CD22FC6201EF1F7002B227B /* BackButton.m */,
 			);
 			name = LearnBase;
 			sourceTree = "<group>";
@@ -222,6 +234,17 @@
 				5CD22FC3201EEE27002B227B /* LearnAFNetworkingController.m */,
 			);
 			path = LearnAFNetworking;
+			sourceTree = "<group>";
+		};
+		5CD22FC8201EF27C002B227B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5CD22FCC201EF2AC002B227B /* SecondViewController.h */,
+				5CD22FCD201EF2AC002B227B /* SecondViewController.m */,
+				5CD22FCF201EF2C5002B227B /* UIViewController+NavBar.h */,
+				5CD22FD0201EF2C5002B227B /* UIViewController+NavBar.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,11 +380,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD22FCE201EF2AC002B227B /* SecondViewController.m in Sources */,
 				5CD22F71201EC3D0002B227B /* AFURLSessionManager.m in Sources */,
 				5CD22E94201EC33E002B227B /* ViewController.m in Sources */,
 				5CD22E91201EC33E002B227B /* AppDelegate.m in Sources */,
 				5CD22FC4201EEE27002B227B /* LearnAFNetworkingController.m in Sources */,
 				5CD22F6D201EC3D0002B227B /* AFNetworkReachabilityManager.m in Sources */,
+				5CD22FD1201EF2C5002B227B /* UIViewController+NavBar.m in Sources */,
 				5CD22E8E201EC33E002B227B /* main.m in Sources */,
 				5CD22F6E201EC3D0002B227B /* AFSecurityPolicy.m in Sources */,
 				5CD22FC0201EEA93002B227B /* LearnListModel.m in Sources */,
@@ -369,6 +394,7 @@
 				5CD22FBA201EEA3F002B227B /* LearnListViewController.m in Sources */,
 				5CD22F70201EC3D0002B227B /* AFURLResponseSerialization.m in Sources */,
 				5CD22FBD201EEA61002B227B /* LearnListCell.m in Sources */,
+				5CD22FC7201EF1F7002B227B /* BackButton.m in Sources */,
 				5CD22F6C201EC3D0002B227B /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

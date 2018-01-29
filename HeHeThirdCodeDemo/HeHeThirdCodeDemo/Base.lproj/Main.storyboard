@@ -60,9 +60,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="POb-yr-VpZ" kind="show" identifier="AFNetworkingSegue" id="kj5-Lk-yff"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -71,6 +68,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="GQU-Fc-Nec"/>
+                    <connections>
+                        <segue destination="POb-yr-VpZ" kind="show" identifier="AFNetworkingSegue" id="qPv-MM-UJS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c57-2s-yMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,6 +95,9 @@
                                     <constraint firstAttribute="height" constant="45" id="DbP-uq-LQI"/>
                                 </constraints>
                                 <state key="normal" title="Get请求" backgroundImage="btnbg"/>
+                                <connections>
+                                    <action selector="doGetRequest:" destination="POb-yr-VpZ" eventType="touchUpInside" id="oU9-Lg-3om"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFe-fQ-Nsr">
                                 <rect key="frame" x="127" y="381.5" width="120" height="45"/>
@@ -103,6 +106,9 @@
                                     <constraint firstAttribute="width" constant="120" id="veD-wX-rRx"/>
                                 </constraints>
                                 <state key="normal" title="Post请求" backgroundImage="btnbg"/>
+                                <connections>
+                                    <action selector="doPostRequest:" destination="POb-yr-VpZ" eventType="touchUpInside" id="x8e-kI-Ox1"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="doGetRequest函数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FT-gM-CoU">
                                 <rect key="frame" x="107" y="291.5" width="160" height="15"/>
@@ -124,13 +130,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="类:  LearnListViewController.m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8re-El-IC1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AFNetworking基础使用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8re-El-IC1">
                                 <rect key="frame" x="15" y="84" width="345" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="c8O-V7-cUI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.13725490200000001" green="0.67450980390000004" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="类: LearnAFNetworkingController.m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gut-Ie-9tF">
+                                <rect key="frame" x="12" y="114" width="260" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="2Hf-sz-4pb"/>
+                                    <constraint firstAttribute="width" constant="260" id="x70-Ff-Jn0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -141,6 +157,8 @@
                             <constraint firstItem="oJ5-4j-DOF" firstAttribute="centerX" secondItem="1gX-PC-jDq" secondAttribute="centerX" id="8HX-cD-Beb"/>
                             <constraint firstItem="oJ5-4j-DOF" firstAttribute="top" secondItem="AFe-fQ-Nsr" secondAttribute="bottom" constant="5" id="EhO-9G-Wtl"/>
                             <constraint firstItem="8re-El-IC1" firstAttribute="leading" secondItem="1gX-PC-jDq" secondAttribute="leading" constant="15" id="KQl-uc-Da4"/>
+                            <constraint firstItem="gut-Ie-9tF" firstAttribute="leading" secondItem="1gX-PC-jDq" secondAttribute="leading" constant="12" id="MZU-Qe-KVz"/>
+                            <constraint firstItem="gut-Ie-9tF" firstAttribute="top" secondItem="8re-El-IC1" secondAttribute="bottom" constant="5" id="PhH-gv-o91"/>
                             <constraint firstItem="mgz-oy-0IG" firstAttribute="centerY" secondItem="1gX-PC-jDq" secondAttribute="centerY" constant="-70" id="SU0-3C-4EB"/>
                             <constraint firstItem="9FT-gM-CoU" firstAttribute="centerX" secondItem="1gX-PC-jDq" secondAttribute="centerX" id="Vbw-nl-hMi"/>
                             <constraint firstItem="AFe-fQ-Nsr" firstAttribute="centerY" secondItem="1gX-PC-jDq" secondAttribute="centerY" constant="70" id="aA2-0M-4Lj"/>
