@@ -8,6 +8,13 @@
 
 #import "SecondViewController.h"
 
+/**
+ AFNetworking示例
+ */
+
+//Github下载地址: https://github.com/AFNetworking/AFNetworking
+
+
 @interface LearnAFNetworkingController : SecondViewController
 
 @end
