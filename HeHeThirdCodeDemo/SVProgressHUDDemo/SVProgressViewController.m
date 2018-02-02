@@ -9,7 +9,7 @@
 #import "SVProgressViewController.h"
 #import "SVProgressHUD.h"
 
-static const CGFloat DissisTime = 2.f;
+static const CGFloat DissisTime = 1.5f;
 
 @interface SVProgressViewController ()
 
