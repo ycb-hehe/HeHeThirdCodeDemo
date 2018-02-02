@@ -20,6 +20,9 @@
         NSArray *netwokingItem = @[@"AFNetworking",@"ASIHttpRequest"];
         [self.itmes addObject:netwokingItem];
         
+        NSArray *hud = @[@"SVProgressHUD",@"MBProgress"];
+        [self.itmes addObject:hud];
+        
     }
     return self;
 }

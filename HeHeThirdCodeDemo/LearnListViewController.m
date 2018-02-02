@@ -39,14 +39,9 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    switch (section) {
-        case LearlistSectionNetworking: {
-            NSArray *arr = [self.liearListM.itmes objectAtIndex:LearlistSectionNetworking];
-            return arr.count;
-        }
-        default:
-            return 0;
-    };
+ 
+    NSArray *arr = [self.liearListM.itmes objectAtIndex:LearlistSectionNetworking];
+    return arr.count;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -55,7 +50,7 @@
         case 0:
             return @"网络请求";
         case 1:
-            return @"";
+            return @"HUD";
         default:
             return @"";
     }
@@ -64,7 +59,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     LearnListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LearnListCell"];
-    NSArray *arr = [self.liearListM.itmes objectAtIndex:LearlistSectionNetworking];
+    NSArray *arr = [self.liearListM.itmes objectAtIndex:indexPath.section];
     cell.textLabel.text = [arr objectAtIndex:indexPath.row];
     return cell;
 }
@@ -81,7 +76,16 @@
                     break;
             }
             break;
-            
+        case LearlistSectionHud: {
+            switch (indexPath.row) {
+                case 0:
+                    [self performSegueWithIdentifier:@"SVProgressSegue" sender:self];
+                    break;
+                    
+                default:
+                    break;
+            }
+        }
         default:
             break;
     }
